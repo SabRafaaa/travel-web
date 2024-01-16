@@ -123,13 +123,125 @@
             font-size: 16px;
             margin-bottom: 7px;
           }
+
+          .third-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 50px;
+           
+          }
+      
+          .content {
+            flex: 1;
+          }
+      
+          .content h2 {
+
+            color: #131318;
+
+            text-align: left;
+            font-family: Mulish;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+          }
+
+          .content p{
+            color: rgba(19, 19, 24, 0.70);
+
+                font-family: Mulish;
+                font-size: 16px;
+                font-style: normal;
+                font-weight:600;
+                line-height: 26px;
+          }
+
+          
+          
+      
+          .bullet-points {
+            list-style: none;
+            padding: 0;
+            color: rgba(19, 19, 24, 0.70);
+
+                font-family: Mulish;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 26px;
+
+          }
+      
+          .bullet-points li {
+            margin-bottom: 10px;
+            margin-left: 10px;
+          }
+      
+          .orange-button-read-more {
+            background-color: orange;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+          }
+      
+          .image {
+            flex: 1;
+            text-align: right;
+            margin-top: 20px;
+          
+          }
+
+
+          .fourth-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #f8f8f8; 
+          }
+      
+          .image-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+          }
+      
+          .image-container {
+            position: relative;
+            flex: 1;
+            overflow: hidden;
+            filter: contrast(80%); 
+            margin: 0 10px;
+            margin-bottom: 20px;
+          }
+      
+          .image {
+            width: 100%;
+            height: auto;
+            filter: contrast(80%); 
+          }
+      
+          .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+          }
       
         /* Responsive Styles */
         @media (max-width: 600px) {
           .navbar {
             flex-direction: column;
             align-items: flex-start;
-            padding: 10px; /* Adjusted padding for smaller screens */
+            padding: 10px; 
           }
     
           .logo-container {
@@ -145,7 +257,7 @@
             display: block;
             width: 100%;
             box-sizing: border-box;
-            margin-bottom: 5px; /* Adjust spacing between menu items */
+            margin-bottom: 5px; 
           }
 
           .search-boxes {
@@ -156,6 +268,26 @@
             flex: none;
             margin-right: 0;
             margin-bottom: 10px;
+          }
+
+          .third-section {
+            flex-direction: column;
+            padding: 20px;
+          }
+    
+          .image {
+            text-align: center;
+            margin-top: 20px;
+          }
+
+          .image-row {
+            flex-direction: column;
+            align-items: center;
+          }
+    
+          .image-container {
+            flex: 100%;
+            margin: 0;
           }
       }
         
@@ -178,6 +310,7 @@
       <a href="#">Packages</a>
       <a href="#">Testimonial</a>
       <a href="#">Blogs</a>
+      <a href="#">Contacts</a>
     </div>
   </div>
   
@@ -199,6 +332,69 @@
       </button>
     </div>
   </div>
+
+  <div class="third-section">
+    <div class="content">
+      <h2>Our Popular Tours</h2>
+      <p>Discover the world's most sought-after destinations through Our Popular Tours, 
+        <br>where adventure meets exceptional hospitality.</p>
+      <ul class="bullet-points">
+        <li>1. To inspire and facilitate exploration by providing users with a platform 
+            <br>to discover new destinations, cultures, and experiences.</li>
+        <li>2. To provide users with the tools and resources needed to plan their trips efficiently, 
+            <br>ensuring a seamless travel experience</li>
+        <li>3. to enhance the sense of belonging and camaraderie among travel enthusiasts.</li>
+      </ul>
+      <p>This community aspect fosters the exchange of travel tips, recommendations, and personal experiences, 
+        <br>creating a supportive environment for travelers to connect and share their adventures. </p>
+      <button class="orange-button-read-more">
+        Read More
+      </button>
+    </div>
+    <div class="image">
+      <img src="Images/Rectangle 4.png" alt="Image description">
+    </div>
+  </div>
+
+  <div class="fourth-section">
+    <h2>Choose Your Destination</h2>
+    <p>Immerse yourself in the captivating moments captured by fellow travelers in our carefully curated gallery.</p>
+    <div class="image-row">
+      <div class="image-container">
+        <img src="Images/Rectangle 5.png" alt="Image 1" class="image">
+        <div class="text-overlay">Maldives</div>
+      </div>
+      <div class="image-container">
+        <img src="Images/Rectangle 8.png" alt="Image 2" class="image">
+        <div class="text-overlay">Indonesia</div>
+      </div>
+    </div>
+    <div class="image-row">
+      <div class="image-container">
+        <img src="Images/Rectangle 6.png" alt="Image 3" class="image">
+        <div class="text-overlay">Sri Lanka</div>
+      </div>
+      <div class="image-container">
+        <img src="Images/Rectangle 7.png" alt="Image 4" class="image">
+        <div class="text-overlay">North America</div>
+      </div>
+      <div class="image-container">
+        <img src="Images/Rectangle 9.png" alt="Image 5" class="image">
+        <div class="text-overlay">kashmir</div>
+      </div>
+    </div>
+    <div class="image-row">
+      <div class="image-container">
+        <img src="Images/Rectangle 10.png" alt="Image 6" class="image">
+        <div class="text-overlay">Bangladesh</div>
+      </div>
+      <div class="image-container">
+        <img src="Images/Rectangle 11.png" alt="Image 7" class="image">
+        <div class="text-overlay">Bandarban</div>
+      </div>
+    </div>
+  </div>
+  
 
   
 </body>
