@@ -3,9 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <style>
+        body {
+          margin: 0;
+          font-family: 'Arial', sans-serif;
+        }
     
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px; /* Adjusted padding to 20px */
+        }
+    
+        .logo-container {
+          display: flex;
+          align-items: center;
+        }
+    
+        .logo img {
+          width: 60px; /* Adjust as needed */
+        }
+    
+        .website-name {
+          font-size: 30px; /* Adjust as needed */
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+        }
+    
+        .wonder {
+          color: orange;
+          margin-right: 5px; /* Adjust spacing between "Wonder" and "Travel" */
+        }
+    
+        .travel {
+          color: black;
+        }
+    
+        .menu {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+    
+        .menu a {
+          text-decoration: none;
+          color: black;
+          padding: 10px;
+          transition: color 0.3s ease;
+          font-weight: 500;
+        }
+    
+        .menu a:hover {
+          color: orange;
+          background-color: transparent; /* Remove background color change on hover */
+        }
+
+        .section {
+            position: relative;
+            background-image: url('Images/Group 13 (1) (1).png'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            
+          }
+      
+          .section h2 {
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 800;
+          }
+      
+          .section p {
+            margin-bottom: 30px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+          }
+      
+          .search-boxes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.7); 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+          }
+      
+          .search-box {
+            text-align: center;
+            padding: 20px;
+            
+            border-radius: 5px;
+            
+            flex: 1;
+          }
+      
+          .search-box input {
+            width: 80%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 3px;
+          }
+      
+          .orange-button {
+            background-color: orange;
+            color: white;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 7px;
+          }
+      
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+          .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px; /* Adjusted padding for smaller screens */
+          }
+    
+          .logo-container {
+            margin-bottom: 10px;
+          }
+    
+          .menu {
+            width: 100%;
+            justify-content: flex-start;
+          }
+    
+          .menu a {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 5px; /* Adjust spacing between menu items */
+          }
+
+          .search-boxes {
+            flex-direction: column;
+          }
+    
+          .search-box {
+            flex: none;
+            margin-right: 0;
+            margin-bottom: 10px;
+          }
+      }
+        
+    </style>
+  </head>
+  <body>
+  
+  <div class="navbar">
+    <div class="logo-container">
+      <div class="logo">
+        <img src="Images/Group 40071 (2).png" alt="Logo">
+      </div>
+      <div class="website-name">
+        <span class="wonder">Wonder</span>
+        <span class="travel">Travel</span>
+      </div>
+    </div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Packages</a>
+      <a href="#">Testimonial</a>
+      <a href="#">Blogs</a>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>Explore Your Travel</h2>
+    <p>Embark on a journey, explore the world with endless travel possibilities..</p>
+    <div class="search-boxes">
+      <div class="search-box">
+        <input type="text" placeholder="Where go">
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="When">
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Select Type">
+      </div>
+      <button class="orange-button">
+        Search Now
+      </button>
+    </div>
+  </div>
+
+  
 </body>
 </html>
