@@ -203,6 +203,28 @@
             text-align: center;
             background-color: #f8f8f8; 
           }
+
+          .fourth-section h2{
+            color: #131318;
+
+            text-align: center;
+            font-family: Mulish;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+          }
+
+          .fourth-section p{
+            color: rgba(19, 19, 24, 0.70);
+
+            text-align: center;
+            font-family: Mulish;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+          }
       
           .image-row {
             display: flex;
@@ -235,6 +257,62 @@
             font-size: 18px;
             font-weight: bold;
           }
+
+
+          .fifth-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #f8f8f8; 
+          }
+
+          .fifth-section h2{
+            color: #131318;
+
+            text-align: center;
+            font-family: Mulish;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+          }
+      
+          .row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 20px;
+          }
+      
+          .card {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+           
+          }
+      
+          .card img {
+            width: 50px; 
+            height: auto;
+            margin-bottom: 10px;
+          }
+      
+          
+          .card:nth-child(1) {
+            background-color: #c3d3dd; 
+          }
+      
+          .card:nth-child(2) {
+            background-color: #eac0bc;
+          }
+      
+          .card:nth-child(3) {
+            background-color: #c3ead3; 
+          }
+      
+          
+
+
       
         /* Responsive Styles */
         @media (max-width: 600px) {
@@ -288,6 +366,16 @@
           .image-container {
             flex: 100%;
             margin: 0;
+          }
+
+          .row {
+            flex-direction: column;
+            align-items: center;
+          }
+    
+          .card {
+            flex: 100%;
+            margin-bottom: 20px;
           }
       }
         
@@ -391,6 +479,31 @@
       <div class="image-container">
         <img src="Images/Rectangle 11.png" alt="Image 7" class="image">
         <div class="text-overlay">Bandarban</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="fifth-section">
+    <h2>Why Choose Us</h2>
+    <p>Explore additional insights about our travel experiences in this section.</p>
+    <div class="row">
+      <div class="card">
+        <img src="Images/hotel 1.png" alt="Image 8">
+        <h3>Handpicked Hotels</h3>
+        <p>Discover handpicked hotels offering unparalleled experiences.</p>
+      </div>
+      <div class="card">
+        <img src="Images/map 1.png" alt="Image 9">
+        <h3>World Class Service</h3>
+        <p>Experience world-class service tailored to exceed your expectations.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card">
+        <img src="Images/price-tag 1.png" alt="Image 10">
+        <h3>Best Price Guarantee</h3>
+        <p>Enjoy peace of mind with our Best Price Guarantee, ensuring unbeatable deals for your travels.</p>
       </div>
     </div>
   </div>
