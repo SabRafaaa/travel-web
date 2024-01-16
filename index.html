@@ -360,11 +360,58 @@
             color: #f39c12; 
             margin-bottom: 10px;
           }
+          .seventh-section {
+            margin-top: 50px;
+            padding: 50px;
+            text-align: left;
+            background-color: #f8f8f8; 
+            position: relative;
+          }
       
+          .newsletter-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+          }
       
-          
+          .newsletter-form {
+            
+            text-align: left;
+            margin-right: 50px;
+            background-color: #ecf0f1; 
+            padding: 50px; 
+            border-radius: 10px; 
+            position: relative; 
+          }
+      
+          .newsletter-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+          }
+      
+          .subscribe-btn {
+            background-color: #e74c3c; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+          }
 
+      
+          .newsletter-images {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%; 
+            height: auto;
+            z-index: 4; 
+           
+          }
 
+         
       
         /* Responsive Styles */
         @media (max-width: 600px) {
@@ -432,6 +479,24 @@
 
           .review {
             flex: 100%;
+          }
+
+
+          .newsletter-container {
+            flex-direction: column;
+            align-items: center;
+          }
+    
+          .newsletter-form {
+            flex: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+    
+          .newsletter-images {
+            position: static;
+            width: 100%;
+            margin-top: 20px; 
           }
       }
         
@@ -583,6 +648,23 @@
         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p><strong>Mike Johnson</strong>
             <br>"Best price guarantee is real! Saved a lot on my recent trip. Thank you!"</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="seventh-section">
+    <h2>Newsletter</h2>
+    <p>Subscribe to our newsletter for the latest updates and special offers.</p>
+    <div class="newsletter-container">
+      <div class="newsletter-form">
+        <input type="text" placeholder="Enter your name">
+        <input type="email" placeholder="Enter your email">
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
+      <div class="newsletter-images">
+        <img class="main-img"src="Images/Rectangle 8 (1).png" alt="Newsletter Image 1">
+        
       </div>
     </div>
   </div>
